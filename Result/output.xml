@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.7.3 on win32)" generated="20230406 16:03:19.186" rpa="false" schemaversion="3">
+<suite id="s1" name="Register" source="C:\development_robot\robot_scripts\registertask\Test\register.robot">
+<test id="s1-t1" name="Verify that investor can sing up if enter valid account" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://magento-demo.lexiconn.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230406 16:03:19.617" level="INFO">Opening browser 'chrome' to base url 'http://magento-demo.lexiconn.com'.</msg>
+<status status="PASS" starttime="20230406 16:03:19.616" endtime="20230406 16:03:23.187"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230406 16:03:23.189" endtime="20230406 16:03:23.381"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='label'][contains(.,'Account')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:23.385" level="INFO">Clicking element '//span[@class='label'][contains(.,'Account')]'.</msg>
+<status status="PASS" starttime="20230406 16:03:23.383" endtime="20230406 16:03:23.477"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@title='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:23.483" level="INFO">Clicking element '//a[@title='Register']'.</msg>
+<status status="PASS" starttime="20230406 16:03:23.482" endtime="20230406 16:03:24.228"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='firstname']</arg>
+<arg>mohamed</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:24.230" level="INFO">Typing text 'mohamed' into text field '//input[@id='firstname']'.</msg>
+<status status="PASS" starttime="20230406 16:03:24.229" endtime="20230406 16:03:24.448"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='lastname']</arg>
+<arg>abdelrazik</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:24.450" level="INFO">Typing text 'abdelrazik' into text field '//input[@id='lastname']'.</msg>
+<status status="PASS" starttime="20230406 16:03:24.448" endtime="20230406 16:03:24.638"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='email_address']</arg>
+<arg>mohamed1@test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:24.640" level="INFO">Typing text 'mohamed1@test.com' into text field '//input[@id='email_address']'.</msg>
+<status status="PASS" starttime="20230406 16:03:24.639" endtime="20230406 16:03:24.879"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='password']</arg>
+<arg>1234567</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:24.881" level="INFO">Typing password into text field '//input[@id='password']'.</msg>
+<msg timestamp="20230406 16:03:24.976" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230406 16:03:25.050" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230406 16:03:24.880" endtime="20230406 16:03:25.050"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//input[@id='confirmation']</arg>
+<arg>1234567</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:25.051" level="INFO">Typing password into text field '//input[@id='confirmation']'.</msg>
+<msg timestamp="20230406 16:03:25.114" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230406 16:03:25.196" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230406 16:03:25.051" endtime="20230406 16:03:25.196"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//input[@id='is_subscribed']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:25.199" level="INFO">Clicking element '//input[@id='is_subscribed']'.</msg>
+<status status="PASS" starttime="20230406 16:03:25.198" endtime="20230406 16:03:25.275"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[.='Register']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230406 16:03:25.277" level="INFO">Clicking button '//button[.='Register']'.</msg>
+<status status="PASS" starttime="20230406 16:03:25.276" endtime="20230406 16:03:27.420"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Thank you for registering with Madison Island.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230406 16:03:27.422" endtime="20230406 16:03:27.454"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>"Done account created"</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230406 16:03:27.456" level="INFO">"Done account created"</msg>
+<status status="PASS" starttime="20230406 16:03:27.455" endtime="20230406 16:03:27.456"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230406 16:03:32.467" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230406 16:03:27.457" endtime="20230406 16:03:32.467"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230406 16:03:32.468" endtime="20230406 16:03:36.374"/>
+</kw>
+<doc>this is some basic info about the whole suite</doc>
+<tag>Smoke</tag>
+<status status="PASS" starttime="20230406 16:03:19.615" endtime="20230406 16:03:36.380"/>
+</test>
+<doc>this is some basic info about the whole suite</doc>
+<status status="PASS" starttime="20230406 16:03:19.191" endtime="20230406 16:03:36.385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Register">Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
